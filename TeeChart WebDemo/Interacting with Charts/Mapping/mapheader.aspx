@@ -1,6 +1,5 @@
 <%@ Page language="c#" Inherits="WebDemo.Interactive_Charting.TeeMapWeb.MapHeader" CodeFile="MapHeader.aspx.cs" %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
-<HTML>
+<HTML lang="en">
 	<HEAD>
 		<title>MapHeader</title>
 		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">

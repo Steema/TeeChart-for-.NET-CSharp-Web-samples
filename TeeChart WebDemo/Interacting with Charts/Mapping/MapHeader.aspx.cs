@@ -39,6 +39,9 @@ namespace WebDemo.Interactive_Charting.TeeMapWeb
 			InitializeComponent();
 			base.OnInit(e);
 
+			string rooturl = this.Context.Request.Url.OriginalString.Substring(0, this.Context.Request.Url.OriginalString.IndexOf(this.Context.Request.RawUrl));
+			webServer = rooturl;
+
 			path = Request.PhysicalApplicationPath + @"Interacting with Charts\Mapping\";
 
 			if(File.Exists(path+@"Maps\World.shp")) 
@@ -53,7 +56,7 @@ namespace WebDemo.Interactive_Charting.TeeMapWeb
 			System.Text.StringBuilder stb1 = new System.Text.StringBuilder();
 			stb1.Append("<script language='JavaScript'>\n");
 			stb1.Append("function loadMap(mapurl)\n");
-			stb1.Append("{\n");	
+			stb1.Append("{\n");
 			stb1.Append("var obj=document.getElementById('comboBox1');\n");
 			stb1.Append("parent.framebody.location=mapurl+obj.selectedIndex;\n");
 			stb1.Append("window.status=parent.location\n");	
@@ -66,7 +69,7 @@ namespace WebDemo.Interactive_Charting.TeeMapWeb
 
 			stb1.Append("</script>\n");
 			
-			string mapurl = webServer + Request.ApplicationPath+"/Interacting with Charts/Mapping/TeeMapWeb.aspx?winmap=";
+			string mapurl = webServer + Request.ApplicationPath+"Interacting with Charts/Mapping/TeeMapWeb.aspx?winmap=";
 			string url = webServer + Request.ApplicationPath+"/Interacting with Charts/Mapping/mapindex.htm";
 			this.Page.RegisterClientScriptBlock("JavaScript1",stb1.ToString());
 			comboBox1.Attributes.Add("onchange","loadMap('"+mapurl+"');");
@@ -82,6 +85,5 @@ namespace WebDemo.Interactive_Charting.TeeMapWeb
 
 		}
 		#endregion
-
 	}
 }
