@@ -19,10 +19,13 @@ namespace WebDemo.Interactive_Charting.TeeMapWeb
 	{
 
 		private string path;
-		private string webServer="localhost";
+		private string webServer; //="localhost";
 	
 		protected void Page_Load(object sender, System.EventArgs e)
 		{
+			string rooturl = this.Context.Request.Url.OriginalString.Substring(0, this.Context.Request.Url.OriginalString.IndexOf(this.Context.Request.RawUrl));
+			webServer = rooturl;
+
 			//When changing map, be sure to delete any saved Zoom location.
 			Session.Remove("ch1Zoomed");			
 		}
@@ -63,8 +66,8 @@ namespace WebDemo.Interactive_Charting.TeeMapWeb
 
 			stb1.Append("</script>\n");
 			
-			string mapurl = "http://"+ webServer + Request.ApplicationPath+"/Interacting with Charts/Mapping/TeeMapWeb.aspx?winmap=";
-			string url = "http://"+ webServer + Request.ApplicationPath+"/Interacting with Charts/Mapping/mapindex.htm";
+			string mapurl = webServer + Request.ApplicationPath+"/Interacting with Charts/Mapping/TeeMapWeb.aspx?winmap=";
+			string url = webServer + Request.ApplicationPath+"/Interacting with Charts/Mapping/mapindex.htm";
 			this.Page.RegisterClientScriptBlock("JavaScript1",stb1.ToString());
 			comboBox1.Attributes.Add("onchange","loadMap('"+mapurl+"');");
 			LinkButton1.Attributes.Add("OnClick","popup('"+url+"');");

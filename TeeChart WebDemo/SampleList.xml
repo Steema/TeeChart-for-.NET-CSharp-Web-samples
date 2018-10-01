@@ -307,6 +307,44 @@
       <SeqOrd>41</SeqOrd>
     </ParentNodes>
   </Sample>
+  
+	<Sample ID="CircularGauge">
+		<ParentNodes ParentID="Gauges" ParentNodePath="Gauges">
+			<Title>TeeChart Circular Gauge</Title>
+			<SamplePage>CircularGauge.aspx</SamplePage>
+			<SeqOrd>811</SeqOrd>
+		</ParentNodes>
+	</Sample>
+	<Sample ID="LinearGauge">
+		<ParentNodes ParentID="Gauges" ParentNodePath="Gauges">
+			<Title>TeeChart Linear Gauge</Title>
+			<SamplePage>LinearGauge.aspx</SamplePage>
+			<SeqOrd>812</SeqOrd>
+		</ParentNodes>
+	</Sample>
+	<Sample ID="VerticalGauge">
+		<ParentNodes ParentID="Gauges" ParentNodePath="Gauges">
+			<Title>TeeChart Vertical Gauge</Title>
+			<SamplePage>VerticalGauge.aspx</SamplePage>
+			<SeqOrd>813</SeqOrd>
+		</ParentNodes>
+	</Sample>
+	<Sample ID="ActivityGauge">
+		<ParentNodes ParentID="Gauges" ParentNodePath="Gauges">
+			<Title>TeeChart Activity Gauge</Title>
+			<SamplePage>ActivityGauge.aspx</SamplePage>
+			<SeqOrd>814</SeqOrd>
+		</ParentNodes>
+	</Sample>
+	<Sample ID="KnobGauge">
+		<ParentNodes ParentID="Gauges" ParentNodePath="Gauges">
+			<Title>TeeChart Knob Gauge</Title>
+			<SamplePage>KnobGauge.aspx</SamplePage>
+			<SeqOrd>815</SeqOrd>
+		</ParentNodes>
+	</Sample>
+  
+  
   <Sample ID="WebAppZoomChart">
 	<ParentNodes ParentID="Interacting with Charts" ParentNodePath="Interacting with Charts\Zooming">
 		<Title>WebApp Zoom Chart</Title>
@@ -316,7 +354,7 @@
   </Sample>
   <Sample ID="scrolltool">
     <ParentNodes ParentID="Interacting with Charts" ParentNodePath="Interacting with Charts\Scrolling">
-      <Title>WebApp Zoom Chart</Title>
+      <Title>WebApp Scroll Chart</Title>
       <SamplePage>scrolltool.aspx</SamplePage>
       <SeqOrd>40</SeqOrd>
     </ParentNodes>
@@ -468,6 +506,22 @@
       <SeqOrd>61</SeqOrd>
     </ParentNodes>    
   </Sample>
+  
+  <Sample ID="JCircularGauge">
+		<ParentNodes ParentID="JScript-HTML5 Live Charts" ParentNodePath="Interacting with Charts\JScript-HTML5 Live Charts">
+			<Title>TeeChart Javascript/VU Meter CircularGauge</Title>
+			<SamplePage>JCircularGauge.aspx</SamplePage>
+			<SeqOrd>611</SeqOrd>
+		</ParentNodes>
+  </Sample>
+  <Sample ID="JActivityGauge">
+		<ParentNodes ParentID="JScript-HTML5 Live Charts" ParentNodePath="Interacting with Charts\JScript-HTML5 Live Charts">
+			<Title>TeeChart Javascript ActivityGauge</Title>
+			<SamplePage>JActivityGauge.aspx</SamplePage>
+			<SeqOrd>612</SeqOrd>
+		</ParentNodes>
+  </Sample>  
+  
   <Sample ID="JScrollerChart">
     <ParentNodes ParentID="JScript-HTML5 Live Charts" ParentNodePath="Interacting with Charts\JScript-HTML5 Live Charts">
       <Title>TeeChart Javascript/HTML5 Library Scroller Example</Title>

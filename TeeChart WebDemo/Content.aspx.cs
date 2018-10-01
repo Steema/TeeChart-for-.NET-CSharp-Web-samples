@@ -18,15 +18,18 @@ namespace WebDemo
 	/// </summary>
 	public partial class Content : System.Web.UI.Page
 	{
-		private string webServer = "localhost:4737";
+		private string webServer; // = "localhost";
 
 		protected void Page_Load(object sender, System.EventArgs e)
 		{
+			string rooturl = this.Context.Request.Url.OriginalString.Substring(0, this.Context.Request.Url.OriginalString.IndexOf(this.Context.Request.RawUrl));
+			webServer = rooturl;
+
 			// Put user code to initialize the page here
 			if ((string)Request.Params["SampleID"]=="0")
 			{
 				string fname = (string)Session["fileName"];
-				string path = "http://"+webServer+"/TeeChartForNET/"+fname;				
+				string path = webServer+"/TeeChartForNET/"+fname;				
 				Response.Redirect(path);				
 			}
 			else
@@ -42,7 +45,7 @@ namespace WebDemo
 				string strParentNodePath="";
 				string val="";
 
-        string xmlFile = "http://" + webServer + "/SampleList.xml";
+        string xmlFile = webServer + "/SampleList.xml";
         HttpWebRequest rqst = (HttpWebRequest)WebRequest.Create(xmlFile);
         rqst.Credentials = CredentialCache.DefaultCredentials;
         HttpWebResponse rsp = (HttpWebResponse)rqst.GetResponse();
