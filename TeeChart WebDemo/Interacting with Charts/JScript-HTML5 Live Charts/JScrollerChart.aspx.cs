@@ -54,11 +54,11 @@ namespace WebDemo
               "changePalette(\"onBlack\");",
 
               //Take Gradient off Candle so that it responds to palette changes
-              "candle1.higher.gradient.visible = false;",
-              "candle1.lower.gradient.visible = false;",
-              "candle1.lower.fill="+ WebChart1.ClientID + "_chart.palette.colors[1];",
+              WebChart1.ClientID + "_chart.series.items[0].higher.gradient.visible = false;",
+							WebChart1.ClientID + "_chart.series.items[0].lower.gradient.visible = false;",
+							WebChart1.ClientID + "_chart.series.items[0].lower.fill="+ WebChart1.ClientID + "_chart.palette.colors[1];",
 
-              WebChart1.ClientID + "_chart.zoom.direction=\"horizontal\";",
+							WebChart1.ClientID + "_chart.zoom.direction=\"horizontal\";",
 
               WebChart1.ClientID + "_chart.title.visible=false;",
   
@@ -78,7 +78,7 @@ namespace WebDemo
               WebChart1.ClientID + "_chart.axes.bottom.labels.dateFormat=\"shortDate\";",
               WebChart1.ClientID + "_chart.axes.bottom.labels.alternate=true;",
 
-              "var x0=candle1.data.x;",
+              "var x0="+WebChart1.ClientID + "_chart.series.items[0].data.x;",
               WebChart1.ClientID + "_chart.axes.bottom.setMinMax(x0[20].getTime(), x0[49].getTime());",
 
               "scroller.panel.transparent=false;",
