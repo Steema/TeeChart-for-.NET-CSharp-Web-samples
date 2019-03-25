@@ -81,9 +81,9 @@ namespace WebDemo
               "  return s.replace(\" \",\"\\n\");",
               "}",
 
-              "candle1.higher.gradient.visible = false;",
-              "candle1.lower.gradient.visible = false;",
-              "candle1.lower.fill="+ WebChart1.ClientID + "_chart.palette.colors[1];",
+              "Series1.higher.gradient.visible = false;",
+              "Series1.lower.gradient.visible = false;",
+              "Series1.lower.fill="+ WebChart1.ClientID + "_chart.palette.colors[1];",
 
               "var startupRange = "+WebChart1.ClientID + "_chart.series.items[0].data.x["+WebChart1.ClientID + "_chart.series.items[0].count()-1] - "+WebChart1.ClientID + "_chart.series.items[0].data.x[0]",
               "STARTAXISMIN = Date.parse(" +WebChart1.ClientID + "_chart.series.items[0].data.x[0]) + (startupRange / 4)",
