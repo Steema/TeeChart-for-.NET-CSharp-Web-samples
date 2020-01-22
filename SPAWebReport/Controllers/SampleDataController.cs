@@ -44,6 +44,7 @@ namespace SPAWebReport.Controllers
             aChart.Header.Visible = false;
             aChart.CurrentTheme = Steema.TeeChart.ThemeType.Report;
             aChart.Axes.Bottom.Title.Caption = "prod code - stock level";
+            aChart.Axes.Bottom.Labels.Separation = 1;
         }
 
         private void SampleDataController_BeforePrint(object sender, EventArgs e)
@@ -80,7 +81,7 @@ namespace SPAWebReport.Controllers
 
             System.IO.MemoryStream mStream = new MemoryStream();
             aChart.Export.Image.JPEG.Width = 718;
-            aChart.Export.Image.JPEG.Height = 70;
+            aChart.Export.Image.JPEG.Height = 80;
             aChart.Export.Image.JPEG.Save(mStream);
 
             img3 = System.Drawing.Image.FromStream(mStream);
@@ -89,8 +90,6 @@ namespace SPAWebReport.Controllers
             FastReport.DataHeaderBand dhBand = dBand2.Header; //  new FastReport.DataHeaderBand;
 
             dhBand.Objects[0].BeforePrint += SampleDataController_BeforePrint1;
-
-            //FastReport.BandColumns bCols = dBand2.Columns;
 
         }
 
