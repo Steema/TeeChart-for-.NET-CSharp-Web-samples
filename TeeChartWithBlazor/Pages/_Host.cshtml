@@ -79,13 +79,12 @@
 </script>
 </head>
 <body onresize="resizeChart()">
+
+  <script src="_framework/blazor.server.js"></script> <!-- note positioning of this script call. After app invalidates JScript Chart render -->
+
   <app>
     @(await Html.RenderComponentAsync<App>(RenderMode.ServerPrerendered))
   </app>
-
-  <!--<script src="_framework/blazor.server.js"></script>  activiating this code removes javascript TeeChart  -->
-
-
 
 </body>
 </html>
