@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Data\\Code Examples\\NET\\Web\\TeeChartWithBlazor\\TeeChartWithBlazor.csproj": {}
+    "D:\\Data\\Code Examples\\NET\\Core\\TeeChartOnBlazor\\TeeChartOnBlazor.csproj": {}
   },
   "projects": {
-    "D:\\Data\\Code Examples\\NET\\Web\\TeeChartWithBlazor\\TeeChartWithBlazor.csproj": {
+    "D:\\Data\\Code Examples\\NET\\Core\\TeeChartOnBlazor\\TeeChartOnBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Data\\Code Examples\\NET\\Web\\TeeChartWithBlazor\\TeeChartWithBlazor.csproj",
-        "projectName": "TeeChartWithBlazor",
-        "projectPath": "D:\\Data\\Code Examples\\NET\\Web\\TeeChartWithBlazor\\TeeChartWithBlazor.csproj",
+        "projectUniqueName": "D:\\Data\\Code Examples\\NET\\Core\\TeeChartOnBlazor\\TeeChartOnBlazor.csproj",
+        "projectName": "TeeChartOnBlazor",
+        "projectPath": "D:\\Data\\Code Examples\\NET\\Core\\TeeChartOnBlazor\\TeeChartOnBlazor.csproj",
         "packagesPath": "C:\\Users\\Marc\\.nuget\\packages\\",
-        "outputPath": "D:\\Data\\Code Examples\\NET\\Web\\TeeChartWithBlazor\\obj\\",
+        "outputPath": "D:\\Data\\Code Examples\\NET\\Core\\TeeChartOnBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -46,7 +46,7 @@
           "dependencies": {
             "Steema.TeeChart.NETCore": {
               "target": "Package",
-              "version": "[4.2019.12.16, )"
+              "version": "[4.2020.2.13, )"
             }
           },
           "imports": [

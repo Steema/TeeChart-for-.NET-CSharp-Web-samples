@@ -29,7 +29,7 @@
           }
         }
       },
-      "Steema.TeeChart.NETCore/4.2019.12.16": {
+      "Steema.TeeChart.NETCore/4.2020.2.13": {
         "type": "package",
         "dependencies": {
           "System.Drawing.Common": "4.6.0-preview5.19224.8"
@@ -110,10 +110,10 @@
         "version.txt"
       ]
     },
-    "Steema.TeeChart.NETCore/4.2019.12.16": {
-      "sha512": "OXW7dl5YD9tYcWvSyiNt3ONnZIm8VVvt9dDWemZbe00tyIsVjP8LMYks35w/F6CQQdcrWV5xOmzpyxE4notBDA==",
+    "Steema.TeeChart.NETCore/4.2020.2.13": {
+      "sha512": "NmFlswtnDkl2RMahXOpgTzatfYFDD2BBpC0o6mX5sSlHuQeYoDCFi7RCWsgTkLrqPzUI4Wy5rv8gHREDvvjiVQ==",
       "type": "package",
-      "path": "steema.teechart.netcore/4.2019.12.16",
+      "path": "steema.teechart.netcore/4.2020.2.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -122,7 +122,7 @@
         "TeeChart_Pro_Net_Tutorials.chm",
         "lib/netcoreapp3.0/TeeChart.dll",
         "readme.txt",
-        "steema.teechart.netcore.4.2019.12.16.nupkg.sha512",
+        "steema.teechart.netcore.4.2020.2.13.nupkg.sha512",
         "steema.teechart.netcore.nuspec"
       ]
     },
@@ -171,7 +171,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "Steema.TeeChart.NETCore >= 4.2019.12.16"
+      "Steema.TeeChart.NETCore >= 4.2020.2.13"
     ]
   },
   "packageFolders": {
@@ -182,11 +182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Data\\Code Examples\\NET\\Web\\TeeChartWithBlazor\\TeeChartWithBlazor.csproj",
-      "projectName": "TeeChartWithBlazor",
-      "projectPath": "D:\\Data\\Code Examples\\NET\\Web\\TeeChartWithBlazor\\TeeChartWithBlazor.csproj",
+      "projectUniqueName": "D:\\Data\\Code Examples\\NET\\Core\\TeeChartOnBlazor\\TeeChartOnBlazor.csproj",
+      "projectName": "TeeChartOnBlazor",
+      "projectPath": "D:\\Data\\Code Examples\\NET\\Core\\TeeChartOnBlazor\\TeeChartOnBlazor.csproj",
       "packagesPath": "C:\\Users\\Marc\\.nuget\\packages\\",
-      "outputPath": "D:\\Data\\Code Examples\\NET\\Web\\TeeChartWithBlazor\\obj\\",
+      "outputPath": "D:\\Data\\Code Examples\\NET\\Core\\TeeChartOnBlazor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -221,7 +221,7 @@
         "dependencies": {
           "Steema.TeeChart.NETCore": {
             "target": "Package",
-            "version": "[4.2019.12.16, )"
+            "version": "[4.2020.2.13, )"
           }
         },
         "imports": [

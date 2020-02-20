@@ -1,6 +1,6 @@
 using System;
 
-namespace TeeChartWithBlazor.Data
+namespace TeeChartOnBlazor.Data
 {
 	public class WeatherForecast
 	{

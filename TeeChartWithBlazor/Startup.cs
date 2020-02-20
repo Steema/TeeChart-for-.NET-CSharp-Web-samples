@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using TeeChartWithBlazor.Data;
+using TeeChartOnBlazor.Data;
 
-namespace TeeChartWithBlazor
+namespace TeeChartOnBlazor
 {
 	public class Startup
 	{

@@ -1,12 +1,12 @@
 ﻿@page "/fetchdata"
 
-@using TeeChartWithBlazor.Data
+@using TeeChartOnBlazor.Data
+
 @inject WeatherForecastService ForecastService
 
 <h1>Weather forecast</h1>
 
 <p>This component demonstrates fetching data from a service.</p>
-
 
 @if (forecasts == null)
 {
@@ -35,10 +35,9 @@ else
       }
     </tbody>
   </table>
-  <br />
-  <br />
+
   <h3>TeeChart Static Chart Image</h3>
-  <p><img src="@chartImg" width="100%"/></p>
+  <p><img src="@chartImage" width="100%" /></p>
   <br />
   <br />
   <h3>TeeChart Dynamic Javascript Chart</h3>
@@ -48,18 +47,22 @@ else
 
   @((MarkupString)chartJS)
 
+  @((MarkupString)(chartResize));
 }
 
 @code {
   WeatherForecast[] forecasts;
-  String chartImg;
+  String chartImage;
   String chartJS;
+  String chartResize;
 
   protected override async Task OnInitializedAsync()
   {
-
     forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
-    chartImg = await ForecastService.GetChart(DateTime.Now, 1200, 300);
-    chartJS = await ForecastService.GetJSChart(DateTime.Now, 1200, 300);
+
+    ChartGen cGen = new ChartGen();
+    chartImage = await cGen.GetChart(forecasts, 1600, 300);
+    chartJS = await cGen.GetJSChart(forecasts, 1600, 300);
+    chartResize = "<script> function resizeChart() { resize("+cGen.chartName+"); } </script>";
   }
 }
